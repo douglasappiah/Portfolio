@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Douglas Appiah | Creative Technologist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="=Index.css">
+</head>
+<body class="bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
+    <!-- Particles.js container (will be initialized with JS) -->
+    <div id="particles-js" class="fixed opacity-30"></div>
+    
+    <!-- Navigation -->
+    <header class="fixed w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold gradient-text">Douglas Appiah</a>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="flex items-center space-x-4">
+                <button id="darkModeToggle" class="w-12 h-6 rounded-full p-1 flex items-center dark-toggle">
+                    <span id="toggleCircle" class="bg-white w-4 h-4 rounded-full shadow-md transform transition-transform duration-300"></span>
+                </button>
+                
+                <button id="mobileMenuButton" class="md:hidden text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white/95 dark:bg-gray-900/95 absolute w-full px-6 py-4 border-t border-gray-200 dark:border-gray-800">
+            <div class="flex flex-col space-y-4">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center relative overflow-hidden pt-20">
+        <div class="container mx-auto px-6 hero-content flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                    Hi, I'm <span class="gradient-text">Douglas Appiah</span>
+                </h1>
+                <h2 class="text-2xl md:text-3xl font-semibold mb-6 text-gray-600 dark:text-gray-300">
+                    Graphic Designer × Web Developer × Ethical Hacker
+                </h2>
+                <p class="text-lg mb-8 text-gray-700 dark:text-gray-300 max-w-lg">
+                    I create visually stunning designs, build beautiful digital experiences, 
+                    and ensure they're secure by design. Let's bring your ideas to life!
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-3 rounded-full font-medium hover:shadow-lg transition-all duration-300">
+                        Hire Me
+                    </a>
+                    <a href="#projects" class="border-2 border-gray-300 dark:border-gray-600 px-6 py-3 rounded-full font-medium hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-300">
+                        View Work
+                    </a>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-white/10 dark:border-gray-800/10 shadow-xl">
+                        <img src="Images/download (1).jpeg" 
+                             alt="Douglas Appiah" 
+                             class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute -bottom-5 -right-5 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-4 py-2 rounded-full shadow-lg">
+                        <span class="text-sm font-bold">AVAILABLE FOR WORK</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 gradient-text">About Me</h2>
+            
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/3">
+                    <div class="border-8 border-gray-200 dark:border-gray-700 rounded-full overflow-hidden shadow-xl w-64 h-64 mx-auto">
+                        <img src="Images/download (1).jpeg" 
+                             alt="Douglas Appiah" 
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+                
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-bold mb-4">Douglas Appiah, 27</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                        I'm a passionate creative technologist with over 5 years of professional experience in design, 
+                        development, and cybersecurity. My journey began with graphic design, evolved into front-end 
+                        development, and expanded to ethical hacking as I became fascinated with building not just 
+                        beautiful experiences, but secure ones too.
+                    </p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                        <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow">
+                            <div class="text-blue-600 dark:text-blue-400 text-3xl mb-2">
+                                <i class="fas fa-paint-brush"></i>
+                            </div>
+                            <h4 class="font-bold text-lg mb-1">Graphic Design</h5>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm">Logos, Branding, UI/UX</p>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow">
+                            <div class="text-purple-600 dark:text-purple-400 text-3xl mb-2">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4 class="font-bold text-lg mb-1">Web Development</h5>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm">Front-end, Responsive, Web Apps</p>
+                        </div>
+                        
+                        <div class="bg-white dark:bg-gray-700 p-4 rounded-lg shadow">
+                            <div class="text-red-600 dark:text-red-400 text-3xl mb-2">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4 class="font-bold text-lg mb-1">Ethical Hacking</h5>
+                            <p class="text-gray-600 dark:text-gray-300 text-sm">Pen Testing, Security Audit</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                        <a href="Douglas_Appiah_CV.pdf" download="Douglas_Appiah_CV" class="flex items-center bg-gray-800 dark:bg-gray-200 text-white dark:text-gray-900 px-4 py-2 rounded-full text-sm font-medium">
+                            <i class="fas fa-download mr-2"></i> Download CV
+                        </a>
+                        <a href="#projects" class="flex items-center border border-gray-300 dark:border-gray-600 px-4 py-2 rounded-full text-sm font-medium">
+                            <i class="fas fa-eye mr-2"></i> View Portfolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Skills Section -->
+    <section id="skills" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 gradient-text">My Skills</h2>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <!-- Design Skills -->
+                <div class="md:w-1/3 bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-100 dark:bg-blue-900 p-3 rounded-full mr-4">
+                            <i class="fas fa-palette text-blue-600 dark:text-blue-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Design Skills</h3>
+                    </div>
+                    
+                    <div class="space-y-5">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Adobe Photoshop</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar bg-gray-200 dark:bg-gray-700">
+                                <div class="skill-progress bg-blue-500 animate" style="--skill-level: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Adobe Illustrator</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar bg-gray-200 dark:bg-gray-700">
+                                <div class="skill-progress bg-blue-500 animate" style="--skill-level: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Figma</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar bg-gray-200 dark:bg-gray-700">
+                                <div class="skill-progress bg-blue-500 animate" style="--skill-level: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>UI/UX Design</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar bg-gray-200 dark:bg-gray-700">
+                                <div class="skill-progress bg-blue-500 animate" style="--skill-level: 88%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Development Skills -->
+                <div class="md:w-1/3 bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-purple-100 dark:bg-purple-900 p-3 rounded-full mr-4">
+                            <i class="fas fa-laptop-code text-purple-600 dark:text-purple-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Development Skills</h3>
+                    </div>
+                    
+                    <div class="space-y-5">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>HTML/CSS</span>
+                                <span>98%</span>
+                            </div>
+                            <div class="skill-bar bg-gray-200 dark:bg-gray-700">
+                                <div class="skill-progress bg-purple-500 animate" style="--skill-level: 98%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>JavaScript</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="skill-bar bg-gray-200 dark:bg-gray-700">
+                                <div class="skill-progress bg-purple-500 animate" style="--skill-level: 92%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>React</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar bg-gray-200 dark:bg-gray-700">
+                                <div class="skill-progress bg-purple-500 animate" style="--skill-level: 85%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Node.js</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar bg-gray-200 dark:bg-gray-700">
+                                <div class="skill-progress bg-purple-500 animate" style="--skill-level: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cybersecurity Skills -->
+                <div class="md:w-1/3 bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-red-100 dark:bg-red-900 p-3 rounded-full mr-4">
+                            <i class="fas fa-shield-alt text-red-600 dark:text-red-400 text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Security Skills</h3>
+                    </div>
+                    
+                    <div class="space-y-5">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Penetration Testing</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar bg-gray-200 dark:bg-gray-700">
+                                <div class="skill-progress bg-red-500 animate" style="--skill-level: 90%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Web Security</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar bg-gray-200 dark:bg-gray-700">
+                                <div class="skill-progress bg-red-500 animate" style="--skill-level: 95%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Ethical Hacking</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar bg-gray-200 dark:bg-gray-700">
+                                <div class="skill-progress bg-red-500 animate" style="--skill-level: 88%"></div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>OSINT</span>
+                                <span>82%</span>
+                            </div>
+                            <div class="skill-bar bg-gray-200 dark:bg-gray-700">
+                                <div class="skill-progress bg-red-500 animate" style="--skill-level: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 gradient-text">Featured Projects</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 ease-in-out">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" 
+                             alt="E-commerce Platform" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                            <h3 class="text-white text-xl font-bold">Secure E-commerce Platform</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 dark:text-gray-300 mb-4">
+                            A comprehensive e-commerce solution with built-in security features including payment fraud detection and XSS protection.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-full">React</span>
+                            <span class="text-xs bg-purple-100 dark:bg-purple-900 text-purple-800 dark:text-purple-200 px-2 py-1 rounded-full">Node.js</span>
+                            <span class="text-xs bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-2 py-1 rounded-full">Security</span>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 flex justify-between">
+                        <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                        </a>
+                        <a href="#" class="text-gray-600 dark:text-gray-400 hover:underline flex items-center">
+                            <i class="fab fa-github mr-2"></i> Code
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 ease-in-out">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" 
+                             alt="Design Portfolio" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                            <h3 class="text-white text-xl font-bold">Minimalist Portfolio Design</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 dark:text-gray-300 mb-4">
+                            Clean, minimalist portfolio design embodying modern aesthetics with carefully crafted typography and whitespace.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 px-2 py-1 rounded-full">Figma</span>
+                            <span class="text-xs bg-pink-100 dark:bg-pink-900 text-pink-800 dark:text-pink-200 px-2 py-1 rounded-full">UI/UX</span>
+                            <span class="text-xs bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-2 py-1 rounded-full">Typography</span>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 flex justify-between">
+                        <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i> View Design
+                        </a>
+                        <a href="#" class="text-gray-600 dark:text-gray-400 hover:underline flex items-center">
+                            <i class="fab fa-behance mr-2"></i> Behance
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card bg-white dark:bg-gray-700 rounded-xl overflow-hidden shadow-lg transition-all duration-300 ease-in-out">
+                    <div class="relative overflow-hidden h-48">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" 
+                             alt="Cybersecurity Tool" 
+                             class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-6">
+                            <h3 class="text-white text-xl font-bold">Vulnerability Scanner</h3>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-700 dark:text-gray-300 mb-4">
+                            Automated web vulnerability scanner that detects common security flaws like SQLi, XSS, and CSRF vulnerabilities.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-xs bg-gray-100 dark:bg-gray-600 text-gray-800 dark:text-gray-200 px-2 py-1 rounded-full">Python</span>
+                            <span class="text-xs bg-red-100 dark:bg-red-900 text-red-800 dark:text-red-200 px-2 py-1 rounded-full">Security</span>
+                            <span class="text-xs bg-yellow-100 dark:bg-yellow-900 text-yellow-800 dark:text-yellow-200 px-2 py-1 rounded-full">Automation</span>
+                        </div>
+                    </div>
+                    <div class="px-6 pb-6 flex justify-between">
+                        <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline flex items-center">
+                            <i class="fas fa-external-link-alt mr-2"></i> Learn More
+                        </a>
+                        <a href="#" class="text-gray-600 dark:text-gray-400 hover:underline flex items-center">
+                            <i class="fab fa-github mr-2"></i> GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button id="loadMore" class="border-2 border-blue-500 text-blue-500 dark:text-blue-400 dark:border-blue-400 px-6 py-3 rounded-full font-medium hover:bg-blue-50 dark:hover:bg-blue-900/30 transition-colors duration-300">
+                    Load More Projects
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 gradient-text">What Clients Say</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg relative">
+                    <div class="absolute -top-4 -left-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center">
+                        <i class="fas fa-quote-left text-lg"></i>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 mb-6 italic">
+                        "Douglas transformed our online presence with his exceptional design skills and attention to detail. The website he built for us not only looks amazing but is also incredibly secure."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" 
+                             alt="Sarah Johnson" 
+                             class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">Sarah Johnson</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">CEO, Tech Solutions Inc.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg relative">
+                    <div class="absolute -top-4 -left-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center">
+                        <i class="fas fa-quote-left text-lg"></i>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 mb-6 italic">
+                        "Working with Douglas was a game-changer for our security posture. His ethical hacking skills helped us identify and fix vulnerabilities we didn't even know existed."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" 
+                             alt="Michael Chen" 
+                             class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">Michael Chen</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">CTO, Secure Networks</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white dark:bg-gray-800 p-8 rounded-xl shadow-lg relative">
+                    <div class="absolute -top-4 -left-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white w-12 h-12 rounded-full flex items-center justify-center">
+                        <i class="fas fa-quote-left text-lg"></i>
+                    </div>
+                    <p class="text-gray-700 dark:text-gray-300 mb-6 italic">
+                        "The branding Douglas created for us perfectly captured our vision. His ability to combine aesthetics with functionality is truly remarkable."
+                    </p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" 
+                             alt="Emily Rodriguez" 
+                             class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold">Emily Rodriguez</h4>
+                            <p class="text-sm text-gray-600 dark:text-gray-400">Marketing Director, Bloom Creative</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50 dark:bg-gray-800">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 gradient-text">Get In Touch</h2>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold mb-4">Let's Talk About Your Project</h3>
+                    <p class="text-gray-700 dark:text-gray-300 mb-8">
+                        Have an exciting project in mind? Need design, development, or security consulting services? 
+                        Reach out to me and let's create something amazing together.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 dark:bg-blue-900 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-blue-600 dark:text-blue-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Email Me</h4>
+                                <a href="mailto:dapps209@gmail.com" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400">
+                                    dapps209@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 dark:bg-purple-900 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-purple-600 dark:text-purple-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Call Me</h4>
+                                <a href="tel:+233593759135" class="text-gray-600 dark:text-gray-400 hover:text-purple-600 dark:hover:text-purple-400">
+                                    +233 (59) 375-9135
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-red-100 dark:bg-red-900 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-red-600 dark:text-red-400"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Location</h4>
+                                <p class="text-gray-600 dark:text-gray-400">
+                                    J0238 CORAL ST, af-0502-4153, Kumasi
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 flex space-x-4">
+                        <a href="https://x.com/nkdapps" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition-colors duration-300">
+                            <i class="fab fa-twitter text-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com/quarmehnana?igsh=bjY2ZjFueHlzaWI1" class="bg-purple-600 text-white p-3 rounded-full hover:bg-purple-700 transition-colors duration-300">
+                            <i class="fab fa-instagram text-lg"></i>
+                        </a>
+                        <a href="https://github.com/douglasappiah" class="bg-gray-800 text-white p-3 rounded-full hover:bg-gray-900 transition-colors duration-300">
+                            <i class="fab fa-github text-lg"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/douglas-appiah-964373264/" class="bg-blue-700 text-white p-3 rounded-full hover:bg-blue-800 transition-colors duration-300">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <form id="contactForm" class="bg-white dark:bg-gray-700 p-8 rounded-xl shadow-lg">
+                        <div class="mb-6">
+                            <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Your Name</label>
+                            <input type="text" id="name" name="name" 
+                                   class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-gray-200 transition-colors duration-300"
+                                   placeholder="John Doe" required>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" 
+                                   class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-gray-200 transition-colors duration-300"
+                                   placeholder="john@example.com" required>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Subject</label>
+                            <select id="subject" name="subject" 
+                                    class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-gray-200 transition-colors duration-300">
+                                <option value="">Select a subject</option>
+                                <option value="design">Graphic Design</option>
+                                <option value="development">Web Development</option>
+                                <option value="security">Security Consulting</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" 
+                                      class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:text-gray-200 transition-colors duration-300"
+                                      placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" 
+                                class="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-4 rounded-lg font-bold hover:shadow-lg transition-all duration-300 hover:from-blue-600 hover:to-purple-700">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-2xl font-bold gradient-text">Douglas Appiah</a>
+                    <p class="mt-2 text-sm">Creative Technologist & Security Specialist</p>
+                </div>
+                
+                <div class="flex flex-col items-center md:items-end">
+                    <div class="flex space-x-6 mb-4">
+                        <a href="https://x.com/nkdapps" class="hover:text-blue-400 transition-colors duration-300">
+                            <i class="fab fa-twitter text-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com/quarmehnana?igsh=bjY2ZjFueHlzaWI1" class="hover:text-purple-400 transition-colors duration-300">
+                            <i class="fab fa-instagram text-lg"></i>
+                        </a>
+                        <a href="https://github.com/douglasappiah" class="hover:text-gray-400 transition-colors duration-300">
+                            <i class="fab fa-github text-lg"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/douglas-appiah-964373264/" class="hover:text-blue-600 transition-colors duration-300">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+                        
+                    </div>
+                    <p class="text-sm">&copy; 2025 Douglas Appiah. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-gradient-to-r from-blue-500 to-purple-600 text-white w-12 h-12 rounded-full shadow-xl flex items-center justify-center transition-opacity duration-300 opacity-0 invisible">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="Index.js"></script>
+</body>
+</html>

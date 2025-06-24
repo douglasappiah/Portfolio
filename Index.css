@@ -1,0 +1,80 @@
+
+        /* Custom CSS for animations and effects */
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .skill-bar {
+            height: 8px;
+            border-radius: 4px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .skill-progress {
+            position: absolute;
+            height: 100%;
+            left: 0;
+            top: 0;
+            border-radius: 4px;
+            width: 0;
+        }
+        
+        .skill-progress.animate {
+            animation: fillSkill 1.5s ease-out forwards;
+        }
+        
+        @keyframes fillSkill {
+            from { width: 0; }
+            to { width: var(--skill-level); }
+        }
+        
+        #particles-js {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 10;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        
+        .active:after {
+            width: 100%;
+        }
+        
+        .dark-toggle {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+        }
+    
